@@ -1,0 +1,255 @@
+.playwrite-hu {
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+  }
+
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, #042326 ,  #107361, #0A3A40);
+    box-sizing: border-box;
+
+  }
+
+  p {
+    font-size: 22px;
+    color: white;
+  }
+
+  .button{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0px 9px 20px;
+    background-color:  #0A3A40;
+    border-radius: 180px;
+}
+.button:hover{
+    background-color: white;
+    color: #0A3A40;
+}
+
+
+  span {
+    position: absolute;
+    border-radius: 100vmax;
+  }
+  
+  .top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      transparent 50%,
+      rgba(255, 49, 49, 0.5),
+      rgb(255, 49, 49)
+    );
+  }
+  
+  .bottom {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      rgb(57, 255, 20),
+      rgba(57, 255, 20, 0.5),
+      transparent 50%
+    );
+  }
+  
+  .right {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 30%,
+      rgba(0, 255, 255, 0.5),
+      rgb(0, 255, 255)
+    );
+  }
+  
+  .left {
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      rgb(255, 255, 113),
+      rgba(255, 255, 113, 0.5),
+      transparent 70%
+    );
+  }
+  
+  .top {
+    animation: animateTop 3s ease-in-out infinite;
+  }
+  
+  .bottom {
+    animation: animateBottom 3s ease-in-out infinite;
+  }
+  
+  .right {
+    animation: animateRight 3s ease-in-out infinite;
+  }
+  
+  .left {
+    animation: animateLeft 3s ease-in-out infinite;
+  }
+  
+  @keyframes animateTop {
+    25% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+    30%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateBottom {
+    0%,
+    50% {
+      opacity: 0;
+      width: 0;
+    }
+  
+    75% {
+      opacity: 1;
+      width: 100%;
+    }
+  
+    76%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateRight {
+    0%,
+    25% {
+      opacity: 0;
+      height: 0;
+    }
+  
+    50% {
+      opacity: 1;
+      height: 100%;
+    }
+  
+    55%,
+    100% {
+      height: 100%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateLeft {
+    0%,
+    75% {
+      opacity: 0;
+      bottom: 0;
+      height: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
+  }
+#answer{
+    color: aliceblue;
+    min-height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+#riddle{
+    position: relative;
+    overflow: hidden;
+    
+    min-height: 400px;
+   
+}
+
+@media (max-width: 548px) {
+    #nav {
+        width: 200px;
+        height: 200px;
+       
+    }
+    .noanswer{
+        opacity: 0;
+      }
+      .showanswer{
+        opacity: 1;
+        transform: translateY(-10px);
+        transition: 2s;
+      }
+    
+    p {
+        font-size: 15px;
+        color: white;
+      }
+}
+@media (min-width: 549px) {
+    #nav {
+        width: 500px;
+        min-height: 200px;
+       
+    }
+    .noanswer{
+        opacity: 0;
+      }
+      .showanswer{
+        opacity: 1;
+        transform: translateY(-10px);
+        transition: 2s;
+      }
+    
+}
+
+  .big-title{
+    color: aliceblue;
+  }
+.animatetext{
+    overflow: hidden;
+}
+  .lefttoright{
+    animation: LeftToRight 1s  linear;
+}
+  @keyframes LeftToRight{
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+ h2{
+    color: white;
+    font-size: 27px;
+}
+h1{
+    font-size: 33px;
+    color: #ffffff;
+}
+h3{
+    color: white;
+    font-size: 25px;
+}
