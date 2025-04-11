@@ -7,10 +7,8 @@
 
 
 body {
-    height: 100vh;
     background-image: linear-gradient(to right, #042326 ,  #107361, #0A3A40);
     box-sizing: border-box;
-
   }
 
   p {
@@ -199,7 +197,9 @@ body {
         transform: translateY(-10px);
         transition: 2s;
       }
-    
+    #answer h3{
+   font-size: 17px;
+}
     p {
         font-size: 15px;
         color: white;

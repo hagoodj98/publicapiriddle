@@ -14,7 +14,7 @@
 
  
 
-   <div id="whole" class="d-flex container flex-column align-items-center gap-3 align-self-center" >
+   <div id="whole" class="d-flex container flex-column align-items-center gap-3 align-self-center" style="height: 100vh;" >
         <div class=" d-flex flex-column row-gap-3" id="tophalf" style="height: auto;">
             <div class="d-flex align-items-center align-self-center justify-content-center" id="riddle" >
 
@@ -32,12 +32,6 @@
             </div>
         </div>
      
-            <div class="d-flex align-items-center  justify-content-center" id="answer" >
-                <h3 class="noanswer">
-                    <%= answer %>
-                </h3>
-            
-            </div>
         <div id="nav" class="d-flex  flex-column flex-md-row  align-items-center playwrite-hu justify-content-between">
             <button type="button" class=" button  " id="btn" >reveal Me!</button>
             <button type="button" id="reload" onClick="window.location.reload();" class=" button " > Try another riddle!</button>
